@@ -249,43 +249,85 @@
                         We make creativity <br> <span class="text-warning">brands</span> only.
                     </div>
                 </div>
+                <div class="col-lg-3">
+                    <div class="justify-content-end">
+                        <div class="fw-semibold text-secondary mt-5 pt-lg-5 pb-lg-4 pb-3">CONTACT INFO</div>
+                        <div class="fw-semibold text-secondary opacity-75">
+                            <i class="bi-telephone-fill text-warning"></i>
+                            +99 080 070 4224
+                        </div>
+                        <div class="fw-semibold text-secondary opacity-75 mb-5 pb-4">
+                            <i class="bi bi-envelope-fill text-warning"></i>
+                            hello@company.com
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-4">
+                    <div class="fw-semibold text-secondary mt-lg-5 pt-lg-5 pb-lg-4 pb-3">OUR STUDIO</div>
+                    <div class="fw-semibold text-secondary opacity-75">
+                        <i class="bi-house-fill text-warning"></i>
+                        Av. Lucio Costa - Barra da
+                    </div>
+                    <div class="fw-semibold text-secondary opacity-75">
+                        Tijuca, Rio de Janeiro - RJ, Brasil
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12 col-lg-4">
+                    <div class="text-secondary fw-semibold small mb-5 opacity-75">Copyright 2020 Your Company</div>
+                </div>
+                <div class="col-12 col-lg-4 mb-3">
+                    <div class="text-secondary fw-semibold small mb-5 opacity-75 d-inline mx-lg-2 me-2">Stories</div>
+                    <div class="text-secondary fw-semibold small mb-5 opacity-75 d-inline mx-2">Work with us</div>
+                    <div class="text-secondary fw-semibold small mb-5 opacity-75 d-inline mx-2">Privacy</div>
+                </div>
+                <div class="col-12 col-lg-4">
+                    <div class="text-secondary fw-semibold small mb-5 opacity-75">
+                        <i class="bi-instagram mx-lg-2 me-2"></i>
+                        <i class="bi-twitter mx-2"></i>
+                        <i class="bi-tiktok mx-2"></i>
+                        <i class="bi-telegram mx-2"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
 
+        <script>
+            Fancybox.bind("[data-fancybox]", {
+                // Your custom options
+            });
+            document.addEventListener('DOMContentLoaded', function () {
+                new Splide('#splide2', {
+                    type: 'loop',
+                    perPage: 1,
+                    perMove: 1,
+                    arrows: 0,
+                    autoplay: true,
+                    interval: 2700,
+                    pagination: false,
+                    padding: '20rem',
+                    breakpoints: {
+                        540: {
+                            padding: '0rem',
+                        },
+                        720: {
+                            padding: '5rem',
+                        },
+                        960: {
+                            padding: '10rem',
+                        },
+                        1140: {
+                            padding: '15rem',
+                        },
+                    },
+                }).mount();
+            });
 
-    <script>
-        Fancybox.bind("[data-fancybox]", {
-            // Your custom options
-        });
-        document.addEventListener('DOMContentLoaded', function () {
-            new Splide('#splide2', {
-                type: 'loop',
-                perPage: 1,
-                perMove: 1,
-                arrows: 0,
-                autoplay: true,
-                interval: 2700,
-                pagination: false,
-                padding: '20rem',
-                breakpoints: {
-                    540: {
-                        padding: '0rem',
-                    },
-                    720: {
-                        padding: '5rem',
-                    },
-                    960: {
-                        padding: '10rem',
-                    },
-                    1140: {
-                        padding: '15rem',
-                    },
-                },
-            }).mount();
-        });
-
-        AOS.init({
-            once: true,
-        });
-    </script>
+            AOS.init({
+                once: true,
+            });
+        </script>
 </body>
 
 </html>
