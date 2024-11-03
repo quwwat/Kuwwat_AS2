@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="css/aos.css">
+    <link rel="stylesheet" href="css/splide.min.css">
+    <link rel="stylesheet" href="css/fancybox.css">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Gentium+Book+Plus:ital,wght@0,400;0,700;1,400;1,700&family=Jomhuria&display=swap" rel="stylesheet">
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/aos.js"></script>
+    <script src="js/splide.min.js"></script>
+    <script src="js/fancybox.umd.js"></script>
+
+    <style>
+        .bg-color {
+            background-color: #06798C;
+        }
+
+        .bg-color2 {
+            background-color: #0E8196;
+        }
+
+        .bg-color3 {
+            background-color: #F0F7FD;
+        }
+
+        .text-color {
+            color: #06798C;
+        }
+
+        .btn-grad {
+            background-image: linear-gradient(to right, #fff 0%, #71c2d1 51%, #fff 100%)
+        }
+
+        .btn-grad {
+            transition: 0.5s;
+            background-size: 200% auto;
+            color: #06798C;
+            box-shadow: 0 0 11px #eee;
+        }
+
+        .btn-grad:hover {
+            background-position: right center;
+            color: #06798C;
+        }
+
+        .gentium-book-plus-regular {
+            font-family: "Gentium Book Plus", serif;
+            font-weight: 400;
+            font-style: normal;
+        }
+
+        .gentium-book-plus-bold {
+            font-family: "Gentium Book Plus", serif;
+            font-weight: 700;
+            font-style: normal;
+        }
+    </style>
+</head>
+<body class="gentium-book-plus-bold">
+    
+    
+
+
+    <script>
+        Fancybox.bind("[data-fancybox]", {
+            // Your custom options
+        });
+        document.addEventListener('DOMContentLoaded', function () {
+            new Splide('#splide2', {
+                type: 'loop',
+                perPage: 1,
+                perMove: 1,
+                arrows: 0,
+                autoplay: true,
+                interval: 2700,
+                pagination: false,
+                padding: '20rem',
+                breakpoints: {
+                    540: {
+                        padding: '0rem',
+                    },
+                    720: {
+                        padding: '5rem',
+                    },
+                    960: {
+                        padding: '10rem',
+                    },
+                    1140: {
+                        padding: '15rem',
+                    },
+                },
+            }).mount();
+        });
+
+        AOS.init({
+            once: true,
+        });
+    </script>
+</body>
+</html>
